@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
-class Child extends Component {
-    render() {
-        return (
-            <div className='conta'>
-                <h2 className='Hi'>Hello {this.props.name}</h2>
-            </div>
-            
-        );
-    }
+import React from 'react'
+
+export default function Child() {
+    return (
+        <div>
+            <h1 className='child'onClick={sayHello}> hello world</h1>
+        </div>
+    )
 }
-export default Child;
+function sayHello() {
+    return "Hello monkey"
+}
+// {} for JS codes
+// () for functions
+// [] for arrays
