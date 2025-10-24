@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-import Child from "./child";
+import Header from './Header';
+import Post from './Post';
+// import SideBar from './SideBar';
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1 className='app'>hello world</h1>
-        <Child name={"Abdulrahman"} />
+      <div className="App">
+        <Header />
+        <div className={"main-layout"}>
+          <div className={"posts"}>
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+          </div>
+          {/* <SideBar /> */}
+        </div>
       </div>
-    )
+    );
   }
 }
-
-export default App
+export default App;
