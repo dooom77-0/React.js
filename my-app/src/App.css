@@ -41,3 +41,7 @@
 .read-the-docs {
   color: #888;
 }
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}

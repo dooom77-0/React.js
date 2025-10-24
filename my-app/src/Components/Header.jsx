@@ -1,18 +1,19 @@
 export default function Header() {
     const Style = {
-      backgroundColor: '#1b1b1bff',
-        color: 'white',
+      backgroundColor: 'teal',
+      color: '#fff',
       width: '100%',
-      height: '100px',
+      height: '70px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      fontSize: '20px',
+      fontSize: '25px',
       fontWeight: 'bold',
       position: 'fixed',
       top: 0,
       zIndex: 1000,
-      padding: '20px',
+      padding: '25px',
+      boxShadow:'0 5px 13px rgba(0, 0, 0, 0.4)'
     }
     return (
         <header style={Style}>
