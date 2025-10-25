@@ -1,16 +1,13 @@
 import "./TagButttonStyle.css"
-export default function TagButton() {
+export default function TagButton({title, children}) {
     return (
         <div>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
-            <button className={"btn"}>Click Me</button>
+            {title == null || title == "" ? (<></>) : (<div>
+                <button className={"btn"}>
+                    {title}
+                    {children}
+                </button>
+            </div>)}
         </div>
-    )
+    );
 }

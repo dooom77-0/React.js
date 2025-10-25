@@ -5,13 +5,13 @@ export default function Header() {
       width: '100%',
       height: '70px',
       display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: 'center', /* توسيط عمودي */
+      justifyContent: 'center', /* توسيط افقي */
       fontSize: '25px',
       fontWeight: 'bold',
-      position: 'fixed',
+      position: 'fixed', /** إضافة خاصية position */
       top: 0,
-      zIndex: 1000,
+      zIndex: 1000, /** إضافة خاصية z-index */
       padding: '25px',
       boxShadow:'0 5px 13px rgba(0, 0, 0, 0.4)'
     }
