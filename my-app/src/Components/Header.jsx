@@ -13,7 +13,7 @@ export default function Header() {
       top: 0,
       zIndex: 1000, /** إضافة خاصية z-index */
       padding: '25px',
-      boxShadow:'0 5px 13px rgba(0, 0, 0, 0.4)'
+      boxShadow: '0 5px 13px rgba(0, 0, 0, 0.4)'
     }
     return (
         <header style={Style}>

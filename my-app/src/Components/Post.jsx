@@ -1,4 +1,4 @@
-export default function Post({ name, content="no content" }) {
+export default function Post({ name, children }) {
 
     const Style2 = {
         padding: '20px',
@@ -13,7 +13,8 @@ export default function Post({ name, content="no content" }) {
         <div style={Style2}>
             <h2>{name}</h2>
             <hr />
-            <p style={{fontWeight:'bold'}}>{content}</p>
+            <p>{children}</p>
+            
         </div>
     );
 }

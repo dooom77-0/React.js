@@ -5,9 +5,6 @@ import SideBar from "./Components/SideBar";
 
 const showSide = true
 function App() {
-  const Fcon = `My name is Abdulrahman, I am 18 years old`
-  const Scon = `My name is Khalid, I am 19 years old`
-  const Tcon = `My name is Ahmed, I am 20 years old`
   return (
     <div className={"App"} style={{ backgroundColor: "#ffffffff", width:'100%' , height:'100%'}}>
       <header>
@@ -18,14 +15,26 @@ function App() {
         <div style={{display:'flex', width:'60%'}}>
           {/* POSTS CONTAINER */}
           <main style={{paddingTop:'120px', width:"100%"}}>
-            <Post name={"Abdulrahman"} content={Fcon} />
-            <Post name={"Khalid"} content={Scon} />
-            <Post name={"Ahmed"} content={Tcon}/>
+            <Post name={"Abdulrahman"}>
+              <>
+                <p style={{fontSize:'20px',background:'red',color:'#fff',padding:'10px',borderRadius:'10px',fontWeight:'bold'}}>My name is Abdulrahman</p>
+              </>
+            </Post>
+            <Post name={"Khalid"} >
+              <>
+                <p style={{fontSize:'20px',background:'yellow',color:'#000',fontWeight:'bold',padding:'10px 0'}}>nigga nigga nigga</p>
+              </>
+            </Post>
+            <Post name={"Ahmed"}>
+              <>
+                <p style={{fontSize:'20px',background:'green',color:'#fff',padding:'10px',borderRadius:'10px',fontWeight:'bold'}}>mango mango </p>
+              </>
+            </Post>
           </main>
           {/* ==POSTS CONTAINER == */}
 
           {/* SIDEBAR CONTAINER */}
-          <div style={{ paddingTop: '120px', width: '40%' }}>
+          <div style={{ paddingTop: '120px', width: '40%'}}>
             {showSide == true ? (<SideBar />) : (<></>)}
           </div>
           {/* ==SIDEBAR CONTAINER == */}
