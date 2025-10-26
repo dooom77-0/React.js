@@ -7,7 +7,7 @@ export default function Header() {
       display: 'flex',
       alignItems: 'center', /* توسيط عمودي */
       justifyContent: 'center', /* توسيط افقي */
-      fontSize: '25px',
+      fontSize: '20px',
       fontWeight: 'bold',
       position: 'fixed', /** إضافة خاصية position */
       top: 0,

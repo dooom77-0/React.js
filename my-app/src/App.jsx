@@ -2,13 +2,14 @@ import "./App.css";
 import Header from "./Components/Header";
 import Post from "./Components/Post";
 import SideBar from "./Components/SideBar";
-
 const showSide = true
 function App() {
   const posts = [{
     id: 1,
     name: 'Abdulrahman',
-    children : 'My name is Abdulrahman'
+    children: <div style={{background:'#bdb'}}>
+      <p style={{ fontWeight: 'bold', fontSize: '17px' }}>My name is {name}</p>
+    </div>
   },
     {
     id : 2,
@@ -34,7 +35,7 @@ function App() {
     )
   })
   return (
-    <div className={"App"} style={{ backgroundColor: "#ffffffff", width:'100%' , height:'100%'}}>
+    <div className={"App"} style={{ backgroundColor: "#fff", width:'100%' , height:'100%'}}>
       <header>
         <Header />
       </header>
