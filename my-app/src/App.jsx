@@ -5,6 +5,34 @@ import SideBar from "./Components/SideBar";
 
 const showSide = true
 function App() {
+  const posts = [{
+    id: 1,
+    name: 'Abdulrahman',
+    children : 'My name is Abdulrahman'
+  },
+    {
+    id : 2,
+    name : 'Khalid',
+    children : 'nigga nigga nigga'
+    },
+    {
+    id : 3,
+    name : 'Ali',
+    children : 'mango'
+    },
+    {
+      id: 4,
+      name: 'Ahmed',
+      children: 'My name is Ahmed'
+    }
+  ]
+  const postsList = posts.map((post) => {
+    return (
+      <Post key={post.id} name={post.name}>
+        {post.children}
+      </Post>
+    )
+  })
   return (
     <div className={"App"} style={{ backgroundColor: "#ffffffff", width:'100%' , height:'100%'}}>
       <header>
@@ -15,21 +43,7 @@ function App() {
         <div style={{display:'flex', width:'60%'}}>
           {/* POSTS CONTAINER */}
           <main style={{paddingTop:'120px', width:"100%"}}>
-            <Post name={"Abdulrahman"}>
-              <>
-                <p style={{fontSize:'20px',background:'red',color:'#fff',padding:'10px',borderRadius:'10px',fontWeight:'bold'}}>My name is Abdulrahman</p>
-              </>
-            </Post>
-            <Post name={"Khalid"} >
-              <>
-                <p style={{fontSize:'20px',background:'yellow',color:'#000',fontWeight:'bold',padding:'10px 0'}}>nigga nigga nigga</p>
-              </>
-            </Post>
-            <Post name={"Ahmed"}>
-              <>
-                <p style={{fontSize:'20px',background:'green',color:'#fff',padding:'10px',borderRadius:'10px',fontWeight:'bold'}}>mango mango </p>
-              </>
-            </Post>
+            {postsList}
           </main>
           {/* ==POSTS CONTAINER == */}
 
