@@ -2,13 +2,17 @@ import "./App.css";
 import Header from "./Components/Header";
 import Post from "./Components/Post";
 import SideBar from "./Components/SideBar";
+import MyForm from "./Components/MyForm";
+import { useState } from "react";
 const showSide = true
 function App() {
+  const [name, setName] = useState('Abdulrahman')
   const posts = [{
     id: 1,
     name: 'Abdulrahman',
-    children: <div style={{background:'#bdb'}}>
+    children: <div style={{ background: '#bdb' }}>
       <p style={{ fontWeight: 'bold', fontSize: '17px' }}>My name is {name}</p>
+      <button onClick={name == 'Abdulrahman' ? () => setName('Nigga') : () => setName('Abdulrahman')}>change name</button>
     </div>
   },
     {
@@ -51,6 +55,7 @@ function App() {
           {/* SIDEBAR CONTAINER */}
           <div style={{ paddingTop: '120px', width: '40%'}}>
             {showSide == true ? (<SideBar />) : (<></>)}
+            <MyForm />
           </div>
           {/* ==SIDEBAR CONTAINER == */}
         </div>

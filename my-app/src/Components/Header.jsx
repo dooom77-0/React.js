@@ -9,7 +9,7 @@ export default function Header() {
       justifyContent: 'center', /* توسيط افقي */
       fontSize: '20px',
       fontWeight: 'bold',
-      position: 'fixed', /** إضافة خاصية position */
+      position: 'fixed',
       top: 0,
       zIndex: 1000, /** إضافة خاصية z-index */
       padding: '25px',
