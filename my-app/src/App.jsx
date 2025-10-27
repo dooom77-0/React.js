@@ -55,7 +55,6 @@ function App() {
           {/* SIDEBAR CONTAINER */}
           <div style={{ paddingTop: '120px', width: '40%'}}>
             {showSide == true ? (<SideBar />) : (<></>)}
-            <MyForm />
           </div>
           {/* ==SIDEBAR CONTAINER == */}
         </div>
