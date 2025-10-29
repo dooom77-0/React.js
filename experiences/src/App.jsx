@@ -1,39 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import MyInput from './MyInput'
-import MyForm from './MyForm'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
+export default function App() {
+  const [name, setName] = useState('') // input value
+  const [devices, setDevices] = useState([ // button value
+    
+  ]);
+  function DeleteBtn(id) {
+    const newDevices = devices.filter((device) => { return device.id !== id });
+    setDevices(newDevices)
+  }
+  const devicesList = devices.map((device) => {
+    return (
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <li key={device.id}>{device.name}
+          <button style={{ color: '#fff', backgroundColor: 'red', padding: '10px', margin: '10px' }}
+            onClick={() => { DeleteBtn(device.id) }}>DEL</button>
+        </li>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <MyInput />
-        <MyForm />
+    )
+  })
+  return (
+    <div className="App" style={{ display: 'flex', flexDirection: 'column', placeContent: 'center', padding: '20px', marginLeft: '650px', border: '5px solid teal', borderRadius: '10px', color: '#fff', textAlign: 'center' }}>
+      <div>
+        {devicesList}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div>
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <button onClick={() => {
+          // const newDevices = [...devices, name]
+          // setDevices(newDevices)
+          setDevices([...devices, { id: devices.length + 1, name: name }])
+        }}>Add</button>
+      </div>
+    </div>
   )
 }
-
-export default App
