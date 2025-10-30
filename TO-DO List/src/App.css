@@ -1,0 +1,86 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App h1{
+  color: teal;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.Btn{
+  padding:20px 20px; 
+  background-color:teal; 
+  color:#fff;
+  border: none;
+  margin: 10px;
+  box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Btn:hover{
+  background-color: rgb(0, 92, 92);
+  color: #ffffff;
+}
+.List{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #cbcbcbff;
+  border-radius: 10px;
+  color: #000;
+  width: 450px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+}
+.DELBtn{
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.DELBtn:hover{
+  background-color: rgb(92, 0, 0);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.EditBtn{
+  color: #fff;
+  background-color: rgb(66, 66, 66);
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.EditBtn:hover{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.App input::placeholder{
+  color: #979696;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 10px;
+  
+}
