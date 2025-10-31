@@ -49,6 +49,7 @@ function App() {
     <div className='App'>
       <div className='Containers'>
         <div>
+          <p>This is a preliminary version of TO-DO List</p>
           <h1>TO-DO List📝</h1>
         </div>
         <div className='Input Container'>

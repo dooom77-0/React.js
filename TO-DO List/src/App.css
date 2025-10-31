@@ -36,13 +36,23 @@
 .checkbox input{
   width: 35px;
   height: 35px;
-  accent-color: rgb(0, 255, 0);
+  accent-color: rgba(0, 255, 0, 0.815);
+}
+.App p {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 0, 0.797);
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 .App h1{
   color: teal;
   font-size: 70px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .Btn{
   padding:20px 20px; 
