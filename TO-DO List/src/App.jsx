@@ -13,44 +13,54 @@ function App() {
     color: '#000',
     width: '300px',
   }
+   function AddTask() {
+    if (value === '') {
+      alert('Please add a task') 
+      return
+    }
+    const newTask = { id: Date.now(), name: value }
+    setTasks([...tasks, newTask])
+     setValue('')
+  }
+  function DELBtn(id) {
+    const newTask = tasks.filter((task) => { return task.id !== id });
+    setTasks(newTask)
+    
+  }
+
+
   const taskList = tasks.map((task) => {
     return (
-        <div>
-          <div className="List">
+      <div className='Task'>
+        <div className='checkbox'>
+          <input type='checkbox' />
+        </div>
+        <div className="List">
             <li key={task.id}>{task.name}</li>
           <div>
-            <button className='DELBtn' onClick={DELBtn}>🗑️</button>
-            <button className='EditBtn'>✏️</button>
+            <button className='DELBtn' onClick={() => { DELBtn(task.id) }}>🗑️</button>
           </div>
           </div>
         </div>
       )
   })
-  function AddTask() {
-    if (value === '') {
-      alert('Please add a task') 
-      return
-    }
-    setTasks([...tasks, { id: tasks.length + 1, name: value }])
-    setValue('')
-  }
-  function DELBtn() {
-    
-  }
+ 
   return (
     <div className='App'>
-      <div>
-        <h1>TO-DO List</h1>
-      </div>
-      <div className='Input Container'>
-        <input className='Input' style={inputStyle} type="text" placeholder='Add a task...' value={value} onChange={(e) => setValue(e.target.value)} />
-        <button className='Btn'
-          onClick={AddTask}>Add</button>
-      </div>
-      <div>
-        <ul>
-          {taskList}
-        </ul>
+      <div className='Containers'>
+        <div>
+          <h1>TO-DO List📝</h1>
+        </div>
+        <div className='Input Container'>
+          <input className='Input' style={inputStyle} type="text" placeholder='Add a task...' value={value} onChange={(e) => setValue(e.target.value)} />
+          <button className='Btn'
+            onClick={AddTask}>Add</button>
+        </div>
+        <div>
+          <ul>
+            {taskList}
+          </ul>
+        </div>
       </div>
     </div>
   )
