@@ -1,7 +1,9 @@
+import './App.css'
+import Inputs from './Inputs'
 export default function App() {
   return (
-    <div>
-      <h1>Loan</h1>
+    <div className="App">
+        <Inputs />
     </div>
   );
 }
