@@ -1,12 +1,15 @@
-#root {
+#root{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+}
+.App{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(180, 134, 180),rgb(177, 255, 177),rgb(255, 189, 255),rgb(166, 248, 166));
 }
-

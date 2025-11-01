@@ -1,36 +1,40 @@
-import { useState } from 'react'
-export default function App() {
-  const [name, setName] = useState('') // input value
-  const [devices, setDevices] = useState([ // button value
-    
-  ]);
-  function DeleteBtn(id) {
-    const newDevices = devices.filter((device) => { return device.id !== id });
-    setDevices(newDevices)
+import { useState } from 'react';
+import './App.css';
+export default function RequestTracker() {
+  const [pending, setPending] = useState(0);
+  const [completed, setCompleted] = useState(0);
+
+  async function handleClick() {
+    setPending((p) => {
+      return p + 1;
+    });
+    await delay(3000);
+    setPending((p) => {
+      return p - 1;
+    })
+    setCompleted((c) => {
+      return c + 1;
+    });
   }
-  const devicesList = devices.map((device) => {
-    return (
-      <div>
-        <li key={device.id}>{device.name}
-          <button style={{ color: '#fff', backgroundColor: 'red', padding: '10px', margin: '10px' }}
-            onClick={() => { DeleteBtn(device.id) }}>DEL</button>
-        </li>
-      </div>
-    )
-  })
+
   return (
-    <div className="App" style={{ display: 'flex', flexDirection: 'column', placeContent: 'center', padding: '20px', marginLeft: '650px', border: '5px solid teal', borderRadius: '10px', color: '#fff', textAlign: 'center' }}>
-      <div>
-        {devicesList}
-      </div>
-      <div>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-        <button onClick={() => {
-          // const newDevices = [...devices, name]
-          // setDevices(newDevices)
-          setDevices([...devices, { id: devices.length + 1, name: name }])
-        }}>Add</button>
-      </div>
-    </div>
-  )
+    <>
+      <h3>
+        Pending: {pending}
+      </h3>
+      <h3>
+        Completed: {completed}
+      </h3>
+      <button onClick={handleClick}>
+        Buy     
+      </button>
+    </>
+  );
 }
+
+function delay(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
+}
+// ------------------------updating state challenge------------------------
