@@ -1,6 +1,5 @@
 import './App.css'
 import { useState } from 'react'
-import Modal from './Modal'
 import Swal from 'sweetalert2'
 export default function Inputs() {
     const [value, setValue] = useState({ name: '', tel: '', age: '', isEmployee: '', salary: '' })
@@ -23,7 +22,7 @@ export default function Inputs() {
         }
     }
     return (
-        <>
+    <>
         <div className='container'>
             <h1>Request a Loan</h1>
             <hr />
@@ -55,8 +54,7 @@ export default function Inputs() {
             <button className='btn' style={{ opacity: isFormValid ? 1 : 0.5 }} disabled={!isFormValid} onClick={(e) => { handleSubmit(e) }}>Submit</button>
             
             </div>
-        <Modal isVisible={false}/>
-        </>
+    </>
     )
 
 }
