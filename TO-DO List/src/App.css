@@ -144,7 +144,7 @@
     text-align: center;
   }
   .List{
-    width: 80%;
+    width: auto;
     font-size: 15px;
   }
   .App p{
