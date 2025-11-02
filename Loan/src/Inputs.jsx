@@ -10,7 +10,9 @@ export default function Inputs() {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Something went wrong! Please try again',
+                text: 'Something went wrong! check the phone number or age',
+                showConfirmButton: false,
+                timer: 2000
             })
         } else {
             Swal.fire({
@@ -24,6 +26,7 @@ export default function Inputs() {
     return (
     <>
         <div className='container'>
+            <p>It's just a form to request a loan not a real one</p>   
             <h1>Request a Loan</h1>
             <hr />
             
@@ -53,7 +56,7 @@ export default function Inputs() {
             </select>            
             <button className='btn' style={{ opacity: isFormValid ? 1 : 0.5 }} disabled={!isFormValid} onClick={(e) => { handleSubmit(e) }}>Submit</button>
             
-            </div>
+        </div>
     </>
     )
 
