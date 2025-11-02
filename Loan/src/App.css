@@ -40,8 +40,9 @@
   border-radius: 10px;
   background-color: #fff;
   color: #000;
-  font-size: large;
+  font-size:larger;
 }
+
 .container p{
   color: #000;
   font-size: 20px;
@@ -54,13 +55,17 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
   font-size: large;
+}
+.select option{
+  background-color: #9567ff93;
 }
 .check{
   width: 30px;
   height: 30px;
+  accent-color: rgb(0, 255, 0);
 }
 .btn{
   padding:10px 12px; 

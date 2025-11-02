@@ -27,7 +27,7 @@ export default function Inputs() {
     <>
         <div className='container'>
             <p>It's just a form to request a loan not a real one</p>   
-            <h1>Request a Loan</h1>
+            <h1>Requesting a Loan</h1>
             <hr />
             
             <label>Name </label>
