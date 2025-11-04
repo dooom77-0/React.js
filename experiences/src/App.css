@@ -4,9 +4,44 @@
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+}
+.App{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.container {
+  background-color: #280069;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* max-width: 500px; */
+  height: 50%;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  padding: 25px;
+}
+.container input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+  background-color: #280069;
+  color: #fff;
+}
+label{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 
