@@ -1,9 +1,9 @@
-import React from 'react'
+import MyInput from './MyInput'
 
-export default function MyComponent({value,handleChange}) {
+export default function MyComponent() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <MyInput />
+    </>
   )
 }

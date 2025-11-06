@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useContext} from 'react'
+import { InputContext } from './contexts/InputContext'
+
 export default function MyInput() {
-    const [value,setValue] = useState('')
-    return (
-        <div>
-            <label>Name :</label>
-            <input value={value} onChange={(e) => setValue(e.target.value) } />
-        </div>
-    )
+  const MyContext = useContext(InputContext);
+  return (
+    <>
+      <label>{MyContext.LabelTitle}</label>
+      <input 
+      value={MyContext.value}
+      onChange={(e) => MyContext.handleChange(e.target.value)} />
+    </>
+  )
 }
-//--------------------------------State-------------------------------------------------
