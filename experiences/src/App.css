@@ -44,4 +44,19 @@ label{
   font-weight: bold;
 }
 
+.btn{
+  padding:10px 12px; 
+  background-color:teal; 
+  color:#fff;
+  border:teal solid 1px;
+  margin: 20px;
+  box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+  background-color: rgb(0, 92, 92);
+  color: #ffffff;
+}
+
 
