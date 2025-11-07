@@ -1,23 +1,12 @@
 import './App.css'
-import { Route, Routes, Link } from 'react-router-dom'
-import Hello from './Hello'
-import Home from './Home'
+import AyahViewer from './AyahViewer'
 
 function App() {
   return (
     <>
-      <Link to='/Hello'>
-        <button>Hello</button>
-      </Link>
-      <Link to='/'>
-        <button>Home</button>
-      </Link>
-      {/* <Routes> */}
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/Hello" element={<Hello/>}/>
-
-      </Routes>
+      <div className="App">
+        <AyahViewer />
+      </div>
     </>
   )
 }
