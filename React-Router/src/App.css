@@ -12,10 +12,11 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  background: linear-gradient(45deg, #a2a2a2,#eadada);
 
 }
 .container{
-  background-color: #280069;
+  background-color: #280069cc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,4 +74,133 @@ hr{
   font-size: 20px;
   outline: none;
   border: none;
+}
+.Ar{
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #0f0;
+  transition: all 0.3s ease-in-out;
+}
+.Ar:hover{
+  background-color: #0f0;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.En{
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #f00;
+  transition: all 0.3s ease-in-out;
+}
+.En:hover{
+  background-color: #f00;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+
+}
+
+.Fr{
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #0757a7;
+  transition: all 0.3s ease-in-out;
+}
+.Fr:hover{
+  background-color: #0757a7;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.Ru{
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #800080;
+  transition: all 0.3s ease-in-out;
+}
+.Ru:hover{
+  background-color: #800080;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.Cn{
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #FF8C00;
+  transition: all 0.3s ease-in-out;
+}
+.Cn:hover{
+  background-color: #FF8C00;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.Next{
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.Next:hover{
+  background-color: #45a049;
+  color: #fff;
+}
+
+.Prev{
+  background-color: #fff;
+  color: #008CBA;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.Prev:hover{
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.Tafsir{
+  font-size: 18px;
+}
+
+@media(max-width:768px){
+  .container{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 15px;
+  }
+  .btns{
+    flex-direction: column;
+  }
+  .container button{
+    width: 100%;
+    margin: 2px 0;
+    padding: 5px;
+  }
+  .container h1{
+    font-size: 20px;
+    margin:10px 0;
+  }
+  .container h2{
+    font-size: 16px;
+    margin: 7px 0;
+    padding: 5px;
+  }
+  
 }

@@ -21,7 +21,7 @@ export default function AyahViewer() {
 
     useEffect(() => {
         setTafsir(TafsirData[`49:${ayahNumber}`]?.tafsir)
-        setLanguage("ar")
+        setLanguage('ru')
     }, [ayahNumber])
 
     useEffect(() => {
@@ -56,33 +56,44 @@ export default function AyahViewer() {
               <hr />
               <h2>Translation into other languages</h2>
               <div>
-                  <button 
-                  onClick={() => setLanguage('ar')} 
-                  style={{ opacity: Language == 'ar' ? 0.5 : 1 }}>عربي</button>
+                <button
+                className='Ar' 
+                onClick={() => setLanguage('ar')} 
+                style={{ opacity: Language == 'ar' ? 0.5 : 1,cursor: Language == 'ar' ? 'not-allowed' : 'pointer' }}>عربي</button>
                   
-                <button 
+                <button
+                className='En' 
                 onClick={() => setLanguage('en') } 
-                style={{opacity: Language == 'en' ? 0.5 : 1}}>english</button>
+                style={{opacity: Language == 'en' ? 0.5 : 1,cursor: Language == 'en' ? 'not-allowed' : 'pointer'}}>english</button>
                 
-                <button 
-                style={{opacity: Language == 'fr' ? 0.5 : 1}} 
+                <button
+                className='Fr'
+                style={{opacity: Language == 'fr' ? 0.5 : 1,cursor: Language == 'fr' ? 'not-allowed' : 'pointer'}} 
                 onClick={() => setLanguage("fr")}>Français</button>
                 
                 <button 
-                style={{opacity: Language == 'ru' ? 0.5 : 1}} 
+                className='Ru'
+                style={{opacity: Language == 'ru' ? 0.5 : 1,cursor: Language == 'ru' ? 'not-allowed' : 'pointer'}} 
                 onClick={() => setLanguage("ru")}>русский</button>
+                  
+                <button 
+                className='Cn'
+                style={{opacity: Language == 'cn' ? 0.5 : 1,cursor: Language == 'cn' ? 'not-allowed' : 'pointer'}} 
+                onClick={() => setLanguage("cn")}>中文</button>
                 
               </div>
-              {/* <TafsitViewer /> */}
-              <h2>{Tafsir[Language]}</h2>
+              {/* <Tafsir /> */}
+              <h2 className='Tafsir'>{Tafsir[Language]}</h2>
               
             <div className="btns">
-                <button 
+                <button
+                className='Next' 
                 onClick={nextAyah} 
-                style={{opacity: ayahNumber == 13 ? 0 : 1}}>Next Ayah</button>
+                style={{opacity: ayahNumber == 13 ? 0 : 1, padding: '10px', margin: '5px'}}>Next Ayah</button>
                 
-                <button 
-                style={{opacity: ayahNumber == 11 ? 0 : 1}} 
+                <button
+                className='Prev'
+                style={{opacity: ayahNumber == 11 ? 0 : 1, padding: '10px', margin: '5px'}} 
                 onClick={prevAyah}>Previous Ayah</button>
             </div>  
         </div>
