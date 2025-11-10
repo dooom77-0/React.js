@@ -1,0 +1,69 @@
+.ALbukhari{
+    text-align: center;
+    margin: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    background-color: #ffffff53;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+}
+.Matn{
+    font-size: 24px;
+    margin: 20px 0;
+    color: #000;
+    background-color: #0000ff1a;
+    padding: 15px;
+    border-radius: 15px;
+}
+.Narrator{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.Grade{
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #d1ffd4;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#next{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#next:hover{
+    background-color: #3e8e41;
+    border: none;
+}
+#prev{
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#prev:hover{
+    background-color: #006f8e;
+    border: none;
+}
