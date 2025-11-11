@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .ALbukhari{
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     text-align: center;
     margin: 50px;
     border: 1px solid black;
@@ -9,6 +14,10 @@
     background-color: #7fff3f27;
     box-shadow: 0 5px 7px rgba(0,0,0,0.5);
 }
+.number{
+    font-size: 22px;
+    margin: 10px 0;
+}
 .Matn{
     font-size: 24px;
     margin: 20px 0;
@@ -17,12 +26,28 @@
     padding: 15px;
     border-radius: 15px;
 }
+.Source{
+    font-size: 22px;
+    margin: 10px 0;
+    color: #000;
+    background-color: #ff00001f;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Explane{
+    font-size: 22px;
+    margin: 15px 0;
+    color: #000;
+    background-color: #ffff004c;
+    padding: 10px;
+    border-radius: 10px;
+}
 .Narrator{
     font-size: 22px;
     margin: 10px 0;
 }
 .Grade{
-    font-size: 18px;
+    font-size: 22px;
     margin: 10px 0;
     background-color: #aaffb0;
     display: inline-block;

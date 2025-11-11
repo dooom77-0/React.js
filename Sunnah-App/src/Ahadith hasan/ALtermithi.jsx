@@ -13,13 +13,15 @@ export default function ALtermithi() {
     }, [hadithNumber])
     return (
     <>
-        <div className="ALtermithi" dir='rtl'>
-            <h1>{ALtermithiData[hadithNumber].title} - {ALtermithiData[hadithNumber].number}</h1>
+            <div className="ALtermithi" dir='rtl'>
+            <h2 className='number'>حديث رقم {ALtermithiData[hadithNumber].number} من {ALtermithiData.length}</h2>
+            <h1>{ALtermithiData[hadithNumber].title}</h1>
                 <h1 className='matn'>{hadith}</h1>
-                <h3 className='narrator'>{ALtermithiData[hadithNumber].narrator}</h3>
-                <h3 className='narrator'>{ALtermithiData[hadithNumber].narrator2}</h3>
-                <h3 className='source'> المصدر: {ALtermithiData[hadithNumber].source}</h3>
-                <h3 className='grade'>{ALtermithiData[hadithNumber].grade}</h3>
+                <h2 className='explane'> 🧠شرح الحديث : {ALtermithiData[hadithNumber].ex}</h2>
+                <h3 className='narrator'>👤الراوي:{ALtermithiData[hadithNumber].narrator}</h3>
+                <h3 className='narrator'>👥 المحدث: {ALtermithiData[hadithNumber].narrator2}</h3>
+                <h3 className='source'> 📕المصدر: {ALtermithiData[hadithNumber].source}</h3>
+                <h3 className='grade'>درجة الحديث: {ALtermithiData[hadithNumber].grade}</h3>
 
                 <div className="buttons">
                     <button
