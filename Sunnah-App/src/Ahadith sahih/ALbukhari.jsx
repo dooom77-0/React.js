@@ -7,7 +7,7 @@ export default function ALbukhari() {
     useEffect(() => {
         setHadith(ALbukhariData[hadithNumber].matn)
         setHadithNumber(hadithNumber)
-    }, [hadithNumber])
+    }, [hadithNumber]) 
     return (
         <>
             <div className="ALbukhari" dir='rtl'>

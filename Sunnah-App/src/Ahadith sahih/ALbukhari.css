@@ -1,29 +1,30 @@
 .ALbukhari{
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
     margin: 50px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 20px;
     color: black;
-    background-color: #ffffff53;
+    background-color: #7fff3f27;
     box-shadow: 0 5px 7px rgba(0,0,0,0.5);
 }
 .Matn{
     font-size: 24px;
     margin: 20px 0;
     color: #000;
-    background-color: #0000ff1a;
+    background-color: #1aff0034;
     padding: 15px;
     border-radius: 15px;
 }
 .Narrator{
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0;
 }
 .Grade{
     font-size: 18px;
     margin: 10px 0;
-    background-color: #d1ffd4;
+    background-color: #aaffb0;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 10px;
