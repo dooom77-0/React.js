@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Home{
+    font-family: 'Times New Roman', sans-serif;
+    background-color: rgba(255, 0, 0, 0.151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+    border: 1px solid black;
+    gap: 20px;
+    color: #000;
+}
+h1{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.Sahih{
+    font-size: 22px;
+    margin: 5px 5px 5px 5px;
+    color: #000;
+    background-color: #00ff0d54;
+    padding: 3px 1px;
+    border-radius: 5px;
+}
+.hasan{
+    font-size: 22px;
+    margin: 5px 5px 5px 5px;
+    color: #000;
+    background-color: #00ffff41;
+    padding: 3px 1px;
+    border-radius: 5px;
+}
+.daif{
+    font-size: 22px;
+    margin: 5px 5px 5px 5px;
+    color: #000;
+    background-color: #ff000041;
+    padding: 3px 1px;
+    border-radius: 5px;
+}
+.info{
+    background-color: #0000ff1d;
+    padding: 25px;
+    border-radius: 10px;
+    color: #000;
+    margin: 10px;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+    border: 1px solid black;
+    font-size: 22px;
+}
+.title{
+    font-size: 22px;
+    margin: 10px 0;
+}
+.Go{
+    font-size: 22px;
+    margin: 10px 0;
+    color: #000;
+    background-color: #00ffbba2;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.Go:hover{
+    background-color: #00ffff69;
+    border: none;
+    cursor: pointer;
+}

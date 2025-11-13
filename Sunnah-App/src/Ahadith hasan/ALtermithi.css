@@ -9,7 +9,7 @@
     line-height: 1.6;
     color: #333;
     padding: 15px;
-    background-color: #5bffff61;
+    background-color: #5bffff3c;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -54,6 +54,7 @@
 .buttons{
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 #prev, #next{
@@ -63,6 +64,12 @@
     padding: 10px 24px;
     font-size: 20px;
     cursor: pointer;
+}
+#prev{
+    background-color: #007bff;
+}
+#next{
+    background-color: #28a745;
 }
 
 
