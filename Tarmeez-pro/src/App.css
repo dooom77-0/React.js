@@ -1,0 +1,31 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: linear-gradient(45deg, #a2a2a2, #eadada);
+}
+button , ul{
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+}

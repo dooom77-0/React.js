@@ -1,7 +1,7 @@
 
 import './App.css'
 // import ALbukhari from './Ahadith sahih/ALbukhari.jsx'
-import {Routes,Route,BrowserRouter} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom'
 import ALtermithi from './Ahadith hasan/ALtermithi.jsx'
 import Daif from './Ahadith daif/Daif.jsx'
 import Home from './HomePage.jsx';
