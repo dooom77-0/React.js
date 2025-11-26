@@ -2,6 +2,7 @@ import DaifData from "./Daif.json"
 import './Daif.css'
 import { useState, useEffect } from 'react'
 
+
 export default function Daif() {
     const [daifNumber, setDaifNumber] = useState(0)
     const [daifMatn, setDaifMatn] = useState(DaifData[daifNumber].matn)
@@ -12,7 +13,7 @@ export default function Daif() {
     }, [daifNumber])
     return (
         <>
-            <div className="Daif">
+            <div className="Daif" dir="rtl">
                 <h2 className='number'>حديث رقم {DaifData[daifNumber].number} من {DaifData.length}</h2>
                 <h2 className='matn2'>{daifMatn}</h2>
                 <h2 className='explane2'> {DaifData[daifNumber].ex}</h2>
@@ -20,17 +21,6 @@ export default function Daif() {
                 <h3 className='grade2'>درجة الحديث: {DaifData[daifNumber].grade}</h3>
 
                 <div className="buttons">
-                    <button
-                        id='next'
-                        style={{ visibility: daifNumber === DaifData.length - 1 ? 'hidden' : 'visible' }}
-                        onClick={() => {
-                            if (daifNumber < DaifData.length - 1) {
-                                setDaifNumber(daifNumber + 1)
-                            }
-                        }}
-                    >
-                        التالي
-                    </button>
                     <button
                         id='prev'
                         style={{ visibility: daifNumber === 0 ? 'hidden' : 'visible' }}
@@ -41,6 +31,17 @@ export default function Daif() {
                         }}
                     >
                         السابق
+                    </button>
+                    <button
+                        id='next'
+                        style={{ visibility: daifNumber === DaifData.length - 1 ? 'hidden' : 'visible' }}
+                        onClick={() => {
+                            if (daifNumber < DaifData.length - 1) {
+                                setDaifNumber(daifNumber + 1)
+                            }
+                        }}
+                    >
+                        التالي
                     </button>
                 </div>
             </div>

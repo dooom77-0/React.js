@@ -13,6 +13,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .grade{
     font-size: 22px;
     margin: 10px 0;
@@ -70,6 +71,30 @@
 }
 #next{
     background-color: #28a745;
+}
+
+@media screen and (max-width: 600px) {
+    .ALtermithi{
+        font-size: 12px;
+    }
+    .ALtermithi h1{
+        font-size: 20px;
+    }
+    .matn{
+        font-size: 18px;
+    }
+    .explane{
+        font-size: 14px;
+    }
+    .narrator{
+        font-size: 14px;
+    }
+    .grade{
+        font-size: 12px;
+    }
+    .source{
+        font-size: 12px;
+    }
 }
 
 

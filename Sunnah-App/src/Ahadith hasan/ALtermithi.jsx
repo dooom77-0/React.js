@@ -2,6 +2,7 @@ import ALtermithiData from './ALtermithi.json'
 import './ALtermithi.css'
 import { useState, useEffect } from 'react'
 
+
 export default function ALtermithi() {
     const [hadithNumber, setHadithNumber] = useState(0)
     const [hadith, setHadith] = useState(ALtermithiData[hadithNumber].matn)

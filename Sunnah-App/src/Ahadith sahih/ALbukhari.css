@@ -14,6 +14,7 @@
     background-color: #7fff3f27;
     box-shadow: 0 5px 7px rgba(0,0,0,0.5);
 }
+
 .number{
     font-size: 22px;
     margin: 10px 0;
@@ -92,4 +93,35 @@
 #prev:hover{
     background-color: #006f8e;
     border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .ALbukhari{
+        font-size: 12px;
+        margin: 20px;
+    }
+    .number{
+        font-size: 16px;
+    }
+    .ALbukhari h1{
+        font-size: 20px;
+    }
+    .Matn{
+        font-size: 16px;
+    }
+    .Explane{
+        font-size: 14px;
+    }
+    .Narrator{
+        font-size: 14px;
+    }
+    .Grade{
+        font-size: 12px;
+    }
+    .Source{
+        font-size: 12px;
+    }
+    .ALbukhari button{
+        font-size: 12px;
+    }
 }

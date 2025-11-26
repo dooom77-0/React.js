@@ -1,35 +1,39 @@
 import {Route,Routes,Link } from 'react-router-dom'
 import './App.css'
+import Hello from './Hello'
+import About from './About'
+import PostList from './PostList'
+import PostDetails from './PostDetails'
+import { PostContext } from './contexts/PostContext'
 
 function App() {
 
   return (
     <>
-      <div className="App">
-        <ul>
-          <li>
-            <Link to="/">
-              <button>Home</button>
+      <PostContext.Provider>
+        <div className="App">
+          <div className='buttons'>
+            <Link to='/'>
+              <button>Hello</button>
             </Link>
-          </li>
-          <li>
-            <Link to="/About">
+
+            <Link to='/About'>
               <button>About</button>
             </Link>
-          </li>
-          <li>
-            <Link to="/Contact">
-              <button>Contact</button>
+            
+            <Link to='/PostList'>
+              <button>PostList</button>
             </Link>
-          </li>
-        </ul>
-      <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/About" element={<h1>About</h1>} />
-        <Route path="/Contact" element={<h1>Contact</h1>} />
-        <Route path="*" element={<h1>404 {"Not Found"}</h1>} />
-      </Routes>
-      </div >
+          </div>
+          <Routes>
+            <Route path="/" element={<Hello />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/PostList" element={<PostList />} />
+            <Route path="/PostDetails/:id" element={<PostDetails />} />
+            <Route path="*" element={<h1>404 {"Not Found"}</h1>} />
+          </Routes>
+          </div >
+      </PostContext.Provider>
     </>
   )
 }

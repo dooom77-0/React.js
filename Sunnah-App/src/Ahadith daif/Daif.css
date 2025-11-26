@@ -54,3 +54,21 @@
     border-radius: 10px;
     color: #000;
 }
+
+@media screen and (max-width: 600px) {
+    .Daif{
+        font-size: 12px;
+    }
+    .matn2{
+        font-size: 16px;
+    }
+    .explane2{
+        font-size: 14px;
+    }
+    .grade2{
+        font-size: 12px;
+    }
+    .source2{
+        font-size: 12px;
+    }
+}
