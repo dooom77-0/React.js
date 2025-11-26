@@ -76,3 +76,47 @@ h1{
     border: none;
     cursor: pointer;
 }
+footer h3{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #0000003d;
+    text-align: center;
+    color: #000;
+}
+@media (max-width: 768px) {
+    .Home{
+        font-size: 16px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .Go{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .info1{
+        font-size: 16px;
+    }
+    .info{
+        font-size: 16px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .info h3{
+        font-size: 16px;
+    }
+    .Sahih{
+        font-size: 16px;
+    }
+    .hasan{
+        font-size: 16px;
+    }
+    .daif{
+        font-size: 16px;
+    }
+    footer h3{
+        font-size: 16px;
+    }
+}
