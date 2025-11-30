@@ -1,0 +1,36 @@
+.About{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+.Text h1 span{
+    font-size: 50px;
+    color: rgba(0, 198, 198, 1);
+    text-shadow: 0 0 4px rgba(0, 198, 198, 1);
+}
+.Text p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 198, 198, 1);
+}
+.profile{
+    width: 400px;
+    height: auto;
+    border-radius: 16%;
+    box-shadow: 0 0 10px rgba(0, 198, 198, 1);
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+.profile:hover{
+    box-shadow: 0 0 20px rgba(0, 198, 198, 1);
+}
