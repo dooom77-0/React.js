@@ -1,0 +1,16 @@
+.Contact{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.Contact h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 198, 198, 1);
+}
+.Contact h1 span{
+    color: rgba(0, 198, 198, 1);
+    text-shadow: 0 0 3px rgba(0, 198, 198, 1);
+}

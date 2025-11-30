@@ -2,7 +2,8 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import {ReactTyped} from 'react-typed'
+import { ReactTyped } from 'react-typed'
+import { Link } from 'react-router-dom';
 export default function Home() {
 
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <h1>I'm a <span className='typing' style={{ color: "rgba(0, 198, 198, 1)" }}>
         
         <ReactTyped strings={['Front-end developer', 'Back-end developer(soon)', 'UI/UX designer(soon)','Python-programmer']} typeSpeed={40} backSpeed={50} loop /></span></h1>
-        <h3 className='info' style={{fontSize:"20px"}}>I'm a web developer with a passion for creating beautiful and functional websites.</h3>
+        <h3 className='info' style={{fontSize:"24px"}}>I'm a web developer with a passion for creating beautiful and functional websites.</h3>
         <div className="icons">
           {/* Github */}
           <a href='https://github.com/dooom77-0?tab=repositories' 
@@ -39,9 +40,11 @@ export default function Home() {
 
         </div>
         <div className="btns">
-          <button className='Contact-btn'>
-            contact me
-          </button>
+          <Link to="/Contact" className='btn'>
+            <button className='Contact-btn'>
+              contact me
+            </button>
+          </Link>
         </div>
       </div>
         <img src='/profile2.jpeg' alt='profile' className='profile' />

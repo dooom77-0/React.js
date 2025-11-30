@@ -7,11 +7,11 @@ export default function Header() {
                  Port<span>folio</span>
             </h1>
           <nav>
-            <NavLink to="/" className={window.location.pathname === '/'? 'active-link' : ''}>Home</NavLink>
-            <NavLink to="/About" className={window.location.pathname === '/About'? 'active-link' : ''}>About</NavLink>
-            <NavLink to="/Contact" className={window.location.pathname === '/Contact'? 'active-link' : ''}>Contact</NavLink>
-            <NavLink to="/Projects" className={window.location.pathname === '/Projects'? 'active-link' : ''}>Projects</NavLink>
-            <NavLink to="/skills" className={window.location.pathname === '/skills'? 'active-link' : ''}>Skills</NavLink>
+            <NavLink to="/" className={({isActive}) => isActive ? 'active-link' : ''}>Home</NavLink>
+            <NavLink to="/About" className={({isActive}) => isActive ? 'active-link' : ''}>About</NavLink>
+            <NavLink to="/Contact" className={({isActive}) => isActive ? 'active-link' : ''}>Contact</NavLink>
+            <NavLink to="/Projects" className={({isActive}) => isActive ? 'active-link' : ''}>Projects</NavLink>
+            <NavLink to="/skills" className={({isActive}) => isActive ? 'active-link' : ''}>Skills</NavLink>
             
           </nav>
       
