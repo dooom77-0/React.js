@@ -24,7 +24,7 @@
 }
 .skill{
     padding: 10px;
-    background-color: rgba(0, 198, 198, 0.6);
+    background-color: rgba(0, 198, 198, 0.509);
     border-radius: 10px;
     width: 300px;
     text-align: center;
@@ -44,5 +44,9 @@
     height: 100%;
     background-color: rgba(0, 33, 198, 0.406);
     border-radius: 10px;
+}
+.skill-level-text{
+    margin-top: 10px;
+    text-align: right;
 }
 

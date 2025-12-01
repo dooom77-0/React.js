@@ -12,7 +12,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "My old Portfolio",
+      title: "My first project",
       description: "My old portfolio made with Html and Css",
       image: "/projects/Portfolio old.png",
       tags: [ "CSS3", "Html5"],
@@ -43,7 +43,9 @@ export default function Projects() {
       <div className='container'>
         <h1>Featured <span>Projects</span></h1>
 
-        <p>Here are some of my favorite projects. Each project is a unique opportunity to showcase my skills and creativity.</p>
+        <p>Here are some of my favorite projects. Each project is a unique opportunity to showcase my skills and creativity.<br /><span>if you want to see more projects go to my old portfolio below</span></p>
+
+        
 
         <div className='project-card'>
           {projects.map((project) => (
@@ -60,16 +62,16 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className='project-actions'>
-                  <a href={project.link} className='btn btn-primary'>View Project</a>
-                  <a href={project.github} className='btn btn-secondary'>Code</a>
+                  <a href={project.link} target='_blank' className='btn btn-primary'>View Project</a>
+                  <a href={project.github} target='_blank' className='btn btn-secondary'>Code</a>
                 </div>
               </div>
             </div>
           ))}
         </div>
         <div className='more'>
-          <a href="https://github.com/dooom77-0/html-projects" target='_blank' className='JS'>More Projects(JS)</a>
-          <a href="https://github.com/dooom77-0/React.js" target='_blank' className='React'>More Projects(React)</a>
+          <a href="https://github.com/dooom77-0/html-projects" target='_blank' className='JS'>More Projects(JS code)</a>
+          <a href="https://github.com/dooom77-0/React.js" target='_blank' className='React'>More Projects(React code)</a>
         </div>
       </div>
     </div>
