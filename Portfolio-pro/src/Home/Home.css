@@ -34,7 +34,7 @@
 .text h3 {
     color: rgb(255, 255, 255);
     text-shadow: 0 0 3px rgba(0, 198, 198, 1);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .profile{
@@ -48,6 +48,21 @@
 .profile:hover{
     box-shadow: 0 0 20px rgba(0, 198, 198, 1);
 }
+.profile{
+    animation: float 2.5s infinite ease-in-out;
+}
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 
 a{
     text-decoration: none;
@@ -142,7 +157,58 @@ a{
     border: none;
     transform: scale(1.1);
 }
-
+@media (max-width: 1024px){
+    .Home{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .text h2{
+        padding-top: 70px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .text h1 {
+        font-size: 25px;
+        padding: 0 10px;
+    }
+    .text h1 span{
+        font-size: 25px;
+    }
+    .text .info{
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .Home img{
+        width: 250px;
+        height: auto;
+        margin-top: 400px;
+    }
+    .text .icons{
+        gap: 10px;
+    }
+    .github{
+        font-size: 15px;
+    }
+    .insta{
+        font-size: 15px;
+    }
+    .email{
+        font-size: 15px;
+    }
+    .btns{
+        gap: 10px;
+    }
+    .Contact-btn{
+        font-size: 18px;
+    }
+}
 
 
 

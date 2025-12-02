@@ -43,35 +43,38 @@ export default function Projects() {
       <div className='container'>
         <h1>Featured <span>Projects</span></h1>
 
-        <p>Here are some of my favorite projects. Each project is a unique opportunity to showcase my skills and creativity.<br /><span>if you want to see more projects go to my old portfolio below</span></p>
+        <p className='desc1'>Here are some of my favorite projects. Each project is a unique opportunity to showcase my skills and creativity.<br /><span>if you want to see more projects go to my old portfolio below</span></p>
 
-        
-
-        <div className='project-card'>
-          {projects.map((project) => (
-            <div key={project.id} className='project'>
-              <div className='project-image'>
+        <div className='projects-container'>
+          {projects.map((project, key) => {
+            return (
+              <div key={key} className='project-card'>
+              <div className='project-img'>
                 <img src={project.image} alt={project.title} />
               </div>
-              <div className='project-content'>
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-                <div className='project-tags'>
-                  {project.tags.map((tag, idx) => (
-                    <span key={idx} className='tag'>{tag}</span>
-                  ))}
-                </div>
-                <div className='project-actions'>
-                  <a href={project.link} target='_blank' className='btn btn-primary'>View Project</a>
-                  <a href={project.github} target='_blank' className='btn btn-secondary'>Code</a>
+              <div className='tags-con'>
+                <div className='tags'>
+                  {project.tags.map((tag, key) => {
+                    return (
+                      <span key={key}>{tag}</span>
+                    )
+                  })}
                 </div>
               </div>
+              <h3>{project.title}</h3>
+              <p className='desc'>{project.description}</p>
+                <div className='btns-con'>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
             </div>
-          ))}
+            )
+            
+          })}
         </div>
-        <div className='more'>
-          <a href="https://github.com/dooom77-0/html-projects" target='_blank' className='JS'>More Projects(JS code)</a>
-          <a href="https://github.com/dooom77-0/React.js" target='_blank' className='React'>More Projects(React code)</a>
+        <div className='github-link-con'>
+          <a href="https://github.com/dooom77-0" target="_blank" rel="noopener noreferrer"
+          className='github-link'>Check my Github </a>
         </div>
       </div>
     </div>

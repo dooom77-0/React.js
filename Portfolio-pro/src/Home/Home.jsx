@@ -12,8 +12,8 @@ export default function Home() {
         <h2>Hi, it's <span style={{color:"rgba(0, 198, 198, 1)"}}>Abdulrahman</span></h2>
         <h1>I'm a <span className='typing' style={{ color: "rgba(0, 198, 198, 1)" }}>
         
-        <ReactTyped strings={['Front-End developer', 'Back-End developer(soon)', 'UI/UX designer(soon)','Python-programmer']} typeSpeed={40} backSpeed={40} loop /></span></h1>
-        <h3 className='info' style={{fontSize:"24px"}}>I'm a web developer with a passion for creating beautiful and functional websites.</h3>
+        <ReactTyped strings={['Front-End developer', 'Back-End developer(soon)', 'UI/UX designer(soon)','Python-programmer']} typeSpeed={50} backSpeed={50} loop /></span></h1>
+        <h3 className='info'>I'm a web developer with a passion for creating beautiful and functional websites.</h3>
         <div className="icons">
           {/* Github */}
           <a href='https://github.com/dooom77-0?tab=repositories' 

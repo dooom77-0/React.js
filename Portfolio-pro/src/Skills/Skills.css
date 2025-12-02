@@ -32,6 +32,24 @@
     font-weight: bold;
     color: #000;
     text-align: left;
+    animation: float 2s ease-in-out infinite;
+    transition: all 0.2s ease-in-out;
+}
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+.skill:hover{
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(0, 198, 198, 0.2);
+    cursor: pointer;
 }
 .skill-level{
     width: 100%;

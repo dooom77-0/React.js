@@ -35,3 +35,44 @@
 .profile:hover{
     box-shadow: 0 0 20px rgba(0, 198, 198, 1);
 }
+
+@media (max-width: 1024px){
+    .About{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        text-align: center;
+    }
+    .Text h1{
+        font-size: 40px;
+    }
+    .Text h1 span{
+        font-size: 40px;
+        color: rgba(0, 198, 198, 1);
+        text-shadow: 0 0 4px rgba(0, 198, 198, 1);
+    }
+    .Text p{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 3px rgba(0, 198, 198, 1);
+    }
+    .profile{
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 16%;
+        box-shadow: 0 0 10px rgba(0, 198, 198, 1);
+        transition: box-shadow 0.3s ease-in-out;
+        margin: 20px;
+        
+    }
+}

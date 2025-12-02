@@ -12,6 +12,11 @@
     z-index: 1000;
     padding: 15px;
 }
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 .header h1{
     font-size: 45px;
@@ -45,4 +50,47 @@
     padding: 8px 16px;
     border-radius: 5px;
     border-bottom: 3px solid rgba(0, 198, 198, 1);
+}
+
+@media (max-width: 1024px){
+    .header nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width: 50%;
+        right: 0;
+        background-color: #280069;
+        padding: 0;
+        z-index: 1000;
+        border-bottom-left-radius: 10px;
+        border-left: 2px solid rgba(0, 198, 198, 1);
+        border-bottom: 2px solid rgba(0, 198, 198, 1);
+        border-bottom-right-radius: 10px;
+        border-bottom: 2px solid rgba(0, 198, 198, 1);
+    }
+    NavLink{
+        text-decoration: none;
+        color: rgba(255,255,255,1);
+        transition: all 0.3s ease-in-out;
+    }
+    .header h1{
+        margin-left: 20px;
+    }
+    .header nav a:hover{
+        color: rgba(0, 198, 198, 1);
+    }
+    .active-link{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+        font-size: 24px;
+        cursor: pointer
+    }
+    .header h1{
+        font-size: 35px;
+    }
+    
 }

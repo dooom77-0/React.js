@@ -4,13 +4,18 @@ export default function Contact() {
   return (
     <div className="Contact">
       <h1>Contact <span>Me</span></h1>
-      <h2>Feel free to reach out for collaborations or questions!</h2>
-      <div>
-        <h3>Email: <a href="mailto:dooomww@gmail.com" target='_blank'>dooomww@gmail.com</a></h3>
-        <h3>Github: <a href="https://github.com/dooom77-0" target='_blank'>dooom77-0</a></h3>
-        <h3>Instagram: <a href="https://www.instagram.com/636_abdulrahman/" target='_blank'>636_abdulrahman</a></h3>
-      </div>
       
+      <form className='Form' action='#'>
+        <div className="input-group">
+          <input type="text" placeholder='Full-name' className='name'/>
+          <input type="email" placeholder='Email' className='Email' />
+        </div>
+        <div className="textarea">
+          <input type="text" placeholder='Subject' className='subject' />
+          <textarea name="" id="" cols="30" rows="10" placeholder='Your Message' className='message'></textarea>
+          <button className='sub-btn' value='Submit'>Submit</button>
+        </div>
+      </form>
     </div>
   )
 }
