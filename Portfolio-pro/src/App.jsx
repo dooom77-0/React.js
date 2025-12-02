@@ -23,7 +23,7 @@ function App() {
     return (
       <div className="loading-page">
         <div className="spinner"></div>
-        <h2><ReactTyped strings={['print("Hello World")']} typeSpeed={50} /></h2>
+        <h2><ReactTyped strings={['print("Hello World")']} typeSpeed={40} /></h2>
       </div>
     )
   }

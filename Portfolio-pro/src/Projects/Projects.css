@@ -146,7 +146,7 @@
 .github-link:hover{
     background-color: rgba(0, 198, 198, 1);
     color: #fff;
-}
+} 
 @media (max-width: 1024px){ /* desktop size */
     .Projects{
         padding: 20px;
@@ -178,7 +178,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width: 480px){ /* mobile size */
+@media (max-width: 767px){ /* mobile size */
     .Projects{
         padding: 20px;
         display: flex;

@@ -157,12 +157,15 @@ a{
     border: none;
     transform: scale(1.1);
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
     .Home{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 100%;
+    
     }
     .text{
         text-align: center;
@@ -209,6 +212,4 @@ a{
         font-size: 18px;
     }
 }
-
-
 

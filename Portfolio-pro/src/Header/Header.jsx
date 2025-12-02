@@ -12,7 +12,7 @@ export default function Header() {
             <h1>
                  Port<span>folio</span>
             </h1>
-            <h3 className="menu-icon" onClick={() => setOpen(!open)}>☰</h3>
+      <h3 className="menu-icon" onClick={() => setOpen(!open)}>{open ? "✖" : "☰"}</h3>
           <nav className={open ? 'nav-links active' : 'nav-links'}> 
             <NavLink to="/" onClick={closeMenu} className={({isActive}) => isActive ? 'active-link' : ''}>Home</NavLink>
             <NavLink to="/About" onClick={closeMenu} className={({isActive}) => isActive ? 'active-link' : ''}>About</NavLink>

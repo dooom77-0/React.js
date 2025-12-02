@@ -37,6 +37,7 @@ export default function Projects() {
       link: "https://memory-game-d7.pages.dev/",
       github:"https://github.com/dooom77-0/html-projects/blob/main/memory%20game%20%F0%9F%A7%A0/index.html"
     },
+
   ]
   return (
     <div className='Projects'>
