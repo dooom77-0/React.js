@@ -1,4 +1,5 @@
 import './About.css'
+import {ReactTyped} from 'react-typed'
 export default function About() {
   return (
     <div className="About" dir='ltr'>
@@ -9,8 +10,12 @@ export default function About() {
               And always exploring new technologies.
             </p>
 
-          </div>
-            <img src='/profile2.jpeg' alt='profile' className='profile'/>      
+      </div>
+      <div className="Profile">
+        <img src='/profile2.jpeg' alt='profile' className='profile'/>      
+            <h2><ReactTyped strings={['Front-End developer', 'Back-End developer(soon)', 'UI/UX designer(soon)','Python-programmer']} typeSpeed={50} backSpeed={50} loop /></h2>
+      </div>
+            
     </div>
   )
 }

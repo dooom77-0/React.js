@@ -36,7 +36,7 @@ export default function Projects() {
       tags: ["Html5", "CSS3", "JS"],
       link: "https://memory-game-d7.pages.dev/",
       github:"https://github.com/dooom77-0/html-projects/blob/main/memory%20game%20%F0%9F%A7%A0/index.html"
-    }
+    },
   ]
   return (
     <div className='Projects'>
@@ -50,7 +50,7 @@ export default function Projects() {
             return (
               <div key={key} className='project-card'>
               <div className='project-img'>
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} loading="lazy" />
               </div>
               <div className='tags-con'>
                 <div className='tags'>

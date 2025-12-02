@@ -5,11 +5,31 @@ import About from './About/About.jsx'
 import Skills from './Skills/Skills.jsx'
 import Contact from './Contact/Contact.jsx'
 import Projects from './Projects/Projects.jsx'
+import { useState, useEffect } from 'react'
+import { ReactTyped } from 'react-typed'
+import './LoadingPage.css'
 import './App.css'
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
+  if(loading) {
+    return (
+      <div className="loading-page">
+        <div className="spinner"></div>
+        <h2><ReactTyped strings={['print("Hello World")']} typeSpeed={50} /></h2>
+      </div>
+    )
+  }
   return (
     <div className="App">
+      
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
