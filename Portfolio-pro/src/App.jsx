@@ -22,8 +22,8 @@ function App() {
   if(loading) {
     return (
       <div className="loading-page">
-        <div className="spinner"></div>
-        <h2><ReactTyped strings={['print("Hello World")']} typeSpeed={40} /></h2>
+        <div className="spinner" />
+        <h2><ReactTyped strings={["print('Hello World')"]} typeSpeed={40} /></h2>
       </div>
     )
   }
