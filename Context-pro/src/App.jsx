@@ -1,6 +1,6 @@
 
 // ملف العرض الرئيسي: يوضح كيفية استخدام ThemeContext عبر useContext
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { ThemeProvider } from './contexts/ThemeContext'
 import ThemeContext from './contexts/ThemeContext'
 
@@ -20,7 +20,8 @@ function Content() {
       <p className="mb-4">Current theme: <strong>{theme}</strong></p>
       <button
         onClick={toggleTheme}
-        className="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600"
+        className={`px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 ${
+          theme === 'light' ? 'bg-blue-500 hover:bg-blue-600' : 'bg-gray-600 hover:bg-gray-700'}`}
       >
         Toggle Theme
       </button>
