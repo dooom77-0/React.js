@@ -5,7 +5,7 @@ import { createContext, useState } from 'react'
 
 // ThemeContext: الحاوية التي سنستخدمها لمشاركة بيانات الثيم عبر مكونات التطبيق
 const ThemeContext = createContext()
-
+ 
 // ThemeProvider: يوفّر قيمة الثيم والدالة toggleTheme لجميع المكوّنات الداخلية
 // الاستخدام:
 // <ThemeProvider>

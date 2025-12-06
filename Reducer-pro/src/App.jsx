@@ -1,7 +1,13 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
+
+//الشكل العام ل useReducer
+// const [state, dispatch] = useReducer(reducer, initialState)
+
+
+
 
 // مثال بسيط على استخدام useReducer
-// هذا المثال يعرّف reducer لإدارة حالة عدّاد (count) مع زر لزيادة ونقصان وإعادة التعيين
+// هذا المثال يعرّف reducer لإدارة حالة عدّاد (count) مع زر لزيادة ونقصان وتربيع وإعادة التعيين
 
 // الحالة الابتدائية
 const initialState = { count: 0 }
@@ -33,7 +39,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <div className="App flex justify-center items-center min-h-screen w-screen bg-gradient-to-r from-sky-200 to-emerald-200 p-4" dir='rtl'>
+    <div className="App flex justify-center items-center min-h-screen w-screen bg-linear-to-r from-sky-200 to-emerald-200 p-4" dir='rtl'>
       <div className="bg-white shadow rounded-xl p-6 max-w-md w-full text-center">
         <h1 className="text-2xl font-bold mb-4">useReducer Example</h1>
 

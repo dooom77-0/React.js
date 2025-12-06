@@ -33,7 +33,7 @@ function App() {
   return (
     // نلف التطبيق بالمزوّد حتى تتمكن أي مكوّنات داخل الشجرة من الوصول للثيم
     <ThemeProvider>
-      <div className="App flex justify-center items-center min-h-screen w-full p-4 bg-gradient-to-r from-sky-200 to-emerald-200">
+      <div className="App flex justify-center items-center min-h-screen w-full p-4 bg-linear-to-r from-sky-200 to-emerald-200">
         <Content />
       </div>
     </ThemeProvider>
