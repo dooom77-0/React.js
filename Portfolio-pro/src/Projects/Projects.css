@@ -181,6 +181,7 @@
 @media (max-width: 767px){ /* mobile size */
     .Projects{
         padding: 20px;
+        padding-top: 120px;
         display: flex;
         flex-direction: column;
         align-items: center;

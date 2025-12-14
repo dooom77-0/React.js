@@ -74,8 +74,8 @@ export default function Projects() {
           })}
         </div>
         <div className='github-link-con'>
-          <a href="https://github.com/dooom77-0" target="_blank" rel="noopener noreferrer"
-          className='github-link'>Check my Github </a>
+          <a href="https://my-projects-beryl-pi.vercel.app/" target="_blank" rel="noopener noreferrer"
+          className='github-link'>Check all my projects </a>
         </div>
       </div>
     </div>

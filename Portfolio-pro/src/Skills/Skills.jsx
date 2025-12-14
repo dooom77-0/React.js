@@ -1,12 +1,15 @@
 import React from 'react'
 import './Skills.css'
 export default function Skills() {
-    const skills = [{ name: "Html5",icon:"/Icons/html.svg", level: "90%" },
+    const skills = [{ name: "Html5", icon: "/Icons/html.svg", level: "90%" },
     { name: "Css3",icon:"/Icons/css-3.svg", level: "65%" }, 
     { name: "JavaScript",icon:"/Icons/js.svg", level: "70%" },
     { name: "React",icon:"/Icons/science.svg", level: "70%" },
     { name: "Python",icon:"/Icons/python.svg", level: "60%" },
-    { name:"Next.js",icon:"/Icons/nextjs.svg", level: "0%" },
+    { name:"Next.js",icon:"/Icons/nextjs.svg", level: "70%" },
+    { name:"Typescript",icon:"/Icons/typescript.svg", level: "0%" },
+    { name:"Tailwind CSS",icon:"/Icons/tailwindcss.svg", level: "90%" },
+    { name:"UI/UX Design",icon:"/Icons/figma.svg", level: "0%" },
     ]
   return (
     <div id='skills' className='skills'>

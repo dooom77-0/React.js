@@ -10,7 +10,7 @@ export default function Home() {
     <div className="Home" dir='rtl'>
       <div className="text" dir='ltr'>
         <h2>Hi, it's <span style={{color:"rgba(0, 198, 198, 1)"}}>Abdulrahman</span></h2>
-        <h1>I'm a <span className='typing' style={{ color: "rgba(0, 198, 198, 1)" }}>
+        <h1>I'm a <span className='typing' style={{ color: "rgba(0, 198, 198, 1)", textShadow: "0 0 5px rgba(0, 198, 198, 1)" }} >
         
         <ReactTyped strings={['Front-End developer', 'Back-End developer(soon)', 'UI/UX designer(soon)','Python-programmer']} typeSpeed={50} backSpeed={50} loop /></span></h1>
         <h3 className='info'>I'm a web developer with a passion for creating beautiful and functional websites.</h3>
